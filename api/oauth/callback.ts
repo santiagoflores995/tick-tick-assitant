@@ -1,5 +1,5 @@
-import { TickTickClient } from "../../src/lib/ticktick";
-import { getUserByTelegramId, updateUser } from "../../src/lib/supabase";
+import { TickTickClient } from "../../src/lib/ticktick.js";
+import { getUserByTelegramId, updateUser } from "../../src/lib/supabase.js";
 
 const TICKTICK_CLIENT_ID = process.env.TICKTICK_CLIENT_ID || "";
 const TICKTICK_CLIENT_SECRET = process.env.TICKTICK_CLIENT_SECRET || "";

@@ -8,9 +8,9 @@ import {
   completeConversation,
   cancelConversation,
   type Message,
-} from "../lib/supabase";
-import { TickTickClient } from "../lib/ticktick";
-import { OpenRouterClient } from "../lib/openrouter";
+} from "../lib/supabase.js";
+import { TickTickClient } from "../lib/ticktick.js";
+import { OpenRouterClient } from "../lib/openrouter.js";
 
 const TICKTICK_CLIENT_ID = process.env.TICKTICK_CLIENT_ID || "";
 const TICKTICK_CLIENT_SECRET = process.env.TICKTICK_CLIENT_SECRET || "";

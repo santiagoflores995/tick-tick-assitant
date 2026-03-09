@@ -10,7 +10,7 @@ import {
   handleHelp,
   handleModel,
   handleMessage,
-} from "../src/bot/commands";
+} from "../src/bot/commands.js";
 
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 
