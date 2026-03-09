@@ -4,8 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun run src/index.ts",
-    "start": "bun run src/index.ts"
+    "dev": "bun run api/webhook.ts",
+    "build": "bunx tsc --noEmit"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.47.0",
@@ -15,5 +15,6 @@
     "@types/bun": "latest",
     "bun-types": "latest",
     "typescript": "^5.0.0"
-  }
+  },
+  "bun": true
 }
