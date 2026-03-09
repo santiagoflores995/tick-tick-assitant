@@ -2,18 +2,5 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "buildCommand": "bunx tsc --noEmit",
-  "installCommand": "bun install",
-  "outputDirectory": null,
-  "functions": {
-    "api/webhook.ts": {
-      "runtime": "vercel@latest",
-      "memory": 1024,
-      "maxDuration": 60
-    },
-    "api/oauth/callback.ts": {
-      "runtime": "vercel@latest",
-      "memory": 1024,
-      "maxDuration": 60
-    }
-  }
+  "installCommand": "bun install"
 }
