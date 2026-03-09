@@ -1,0 +1,26 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "functions": {
+    "api/webhook.ts": {
+      "runtime": "vercel@latest",
+      "memory": 1024,
+      "maxDuration": 30
+    },
+    "api/oauth/callback.ts": {
+      "runtime": "vercel@latest",
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/webhook",
+      "dest": "/api/webhook.ts"
+    },
+    {
+      "src": "/api/oauth/ticktick/callback",
+      "dest": "/api/oauth/callback.ts"
+    }
+  ]
+}
