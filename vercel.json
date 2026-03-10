@@ -1,7 +1,10 @@
 {
   "functions": {
-    "api/**/*.ts": {
-      "runtime": "nodejs@20"
+    "api/webhook.ts": {
+      "runtime": "nodejs20@3.4.0"
+    },
+    "api/oauth/callback.ts": {
+      "runtime": "nodejs20@3.4.0"
     }
   }
 }
