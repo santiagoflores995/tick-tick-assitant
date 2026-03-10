@@ -1,10 +1,10 @@
 {
   "functions": {
     "api/webhook.ts": {
-      "runtime": "nodejs20@3.4.0"
+      "runtime": "@vercel/node@3.0.0"
     },
     "api/oauth/callback.ts": {
-      "runtime": "nodejs20@3.4.0"
+      "runtime": "@vercel/node@3.0.0"
     }
   }
 }
