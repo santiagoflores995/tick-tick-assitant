@@ -59,7 +59,9 @@ function getBot(): Bot {
 }
 
 export default async function handler(req: Request): Promise<Response> {
+  console.log("Webhook called, method:", req.method);
   if (req.method === "GET") {
+    console.log("Returning GET response");
     return new Response("TickTick Plan Assistant is running!", { status: 200 });
   }
 
@@ -67,7 +69,7 @@ export default async function handler(req: Request): Promise<Response> {
     try {
       const update = await req.json();
       const botInstance = getBot();
-      await botInstance.handleUpdate(update as never);
+      botInstance.handleUpdate(update as never);
       return new Response("OK", { status: 200 });
     } catch (error) {
       console.error("Error handling update:", error);
